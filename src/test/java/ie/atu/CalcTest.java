@@ -5,13 +5,24 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CalcTest {
-    Calculator myCalc;
+    Calculator myCalc = new Calculator();
 
     @Test
     public void testAdd() {
-        myCalc = new Calculator();
-
         assertEquals(30, myCalc.calcAdd(15, 15));
 
     }
+
+    @Test
+    public void testMultiply() {
+        assertEquals(10, myCalc.calcMultiply(2, 5));
+
+    }
+
+    @Test
+    public void testSubtract() {
+        assertEquals(7, myCalc.calcSubtract(10, 3));
+
+    }
+
 }
