@@ -25,4 +25,10 @@ public class CalcTest {
 
     }
 
+    @Test
+    public void testDivide() {
+        assertEquals(3, myCalc.calcDivide(12, 4));
+
+    }
+
 }
